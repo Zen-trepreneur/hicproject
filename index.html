@@ -1,0 +1,923 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Suman agencies</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo1.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!--  our vendors-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+
+  <!-- =======================================================
+  * Template Name: Bethany - v4.10.0
+  * Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <img src="{% static 'assets/img/clients/logo1.png' %}" width="200px" height="100px">
+           <!-- <h1 class="text-light"><a href="index.html"><span>Suman Agency</span></a></h1>  -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">units</a></li>
+            <li><a class="nav-link scrollto " href="#portfolio">Team</a></li>
+            <li><a class="nav-link scrollto" href="#team">Infrastructure</a></li>
+<!--              <li><a class="nav-link scrollto" href="#privacy policy">vendors</a></li>-->
+
+<!--            <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>-->
+<!--              <ul>-->
+<!--                <li><a href="#">Drop Down 1</a></li>-->
+<!--                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>-->
+<!--                  <ul>-->
+<!--                    <li><a href="#">Deep Drop Down 1</a></li>-->
+<!--                    <li><a href="#">Deep Drop Down 2</a></li>-->
+<!--                    <li><a href="#">Deep Drop Down 3</a></li>-->
+<!--                    <li><a href="#">Deep Drop Down 4</a></li>-->
+<!--                    <li><a href="#">Deep Drop Down 5</a></li>-->
+<!--                  </ul>-->
+<!--                </li>-->
+<!--                <li><a href="#">Drop Down 2</a></li>-->
+<!--                <li><a href="#">Drop Down 3</a></li>-->
+<!--                <li><a href="#">Drop Down 4</a></li>-->
+<!--            </li>-->
+            <li><a class="nav-link scrollto" href="{% url 'contactus' %}">Contact us</a></li>
+<!--            <li><a class="getstarted scrollto" href="#about">get started</a></li>-->
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+      <h1>WE ARE LEADING DISTRIBUTORS</h1>
+      <h2>IN HYDERABAD SINCE 1980 </h2>
+<!--      <a href="#about" class="btn-get-started scrollto">Get Started</a>-->
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
+            <img src="{% static 'assets/img/clients/abbott.jpg' %}"  class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
+            <img src="{% static 'assets/img/clients/alkem.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+            <img src="{% static 'assets/img/clients/cipla.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="500">
+            <img src="{% static 'assets/img/clients/drreddys.webp' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+            <img src="{% static 'assets/img/clients/francino.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+            <img src="{% static 'assets/img/clients/intaspharm.jpeg' %}" class="img-fluid" alt="">
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <h2>get to know us</h2>
+<!--            <h3>IN HYDERABAD SINCE 1980 </h3>-->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+            <p>
+              Suman Agencies is a distribution unit diversified into different regions of Hyderabad, standing strong from past 42 years with a turnover of 90cr/annum.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> With our experiance in the field well-established network the state, we have a potential to make large scale business commitments. Our retail coverage is spread across the twin cities.</li>
+              <li><i class="ri-check-double-line"></i> Our experiance and dedication stands as a strong agent to serve giants for the industry like Appolo(Kiemed), Medplus, KIMS, Yashoda and NTPC. </li>
+              <li><i class="ri-check-double-line"></i> All this along with a durable infrastructure and a responsible staff collaborating with the above mentioned is a very much achievable target.</li>
+            </ul>
+            <!-- <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Staff</p>
+          </div>
+
+          <div class="col-lg-2 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Official Cabins</p>
+          </div>
+
+          <div class="col-lg-2 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Two Wheelers</p>
+          </div>
+
+          <div class="col-lg-2 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Trucks</p>
+          </div>
+            <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Dispatching Locations</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="content">
+              <h3>Why Choose Suman Agencies ?</h3>
+              <p>
+                We develop a relationships that makes positive difference in our customer's live. We provide outstanding product and unsurpassed service, that together, deliver premium to our customers. We work together acreoss boundaries, to meet the needs of our customers and help company win. We value our people, encourage thier development and reward thier performance.
+              </p>
+              <div class="text-center">
+<!--                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>-->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bi bi-person-fill-check"></i>
+                    <h4>Customer commitment</h4>
+                    <p>We are personally accountable for delivering our commitments</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bi bi-person-fill"></i>
+                    <h4>Punctuality</h4>
+                    <p>At Suman Agencies punctuality is the key and satisfy the customer's requirments is the outmost priority</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bi bi-people"></i>
+                    <h4>Team work</h4>
+                    <p>Our workforce has been divided such that the respective person can pay full attention to his duties and responsibilities</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Cta Section ======= -->
+<!--    <section id="cta" class="cta">-->
+<!--      <div class="container">-->
+
+<!--        <div class="text-center" data-aos="zoom-in">-->
+<!--          <h3>Call To Action</h3>-->
+<!--&lt;!&ndash;          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>&ndash;&gt;-->
+<!--          <a class="cta-btn" href="{% url 'contactus' %}">Call To Action</a>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End Cta Section &ndash;&gt;-->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Operational units</h2>
+              <p>We have dedicated sections for each and every operation namely, accounts unit, dispaching unit, transport unit, quality check unit, and expiry breackage</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-4 d-flex align-items-stretch">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon"><i class="bx bx-file"></i></div>
+                  <h4><a href="">ACCOUNTS UNIT</a></h4>
+<!--                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>-->
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon"><i class="bi bi-truck"></i></div>
+                  <h4><a href="">DISPATCHING UNIT</a></h4>
+<!--                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>-->
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon"><i class="bi bi-truck-flatbed"></i></div>
+                  <h4><a href="">TRANSPORT UNIT</a></h4>
+<!--                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>-->
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="icon"><i class="bi bi-clipboard2-check-fill"></i></div>
+                  <h4><a href="">QUALITY CHECK UNIT</a></h4>
+<!--                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>-->
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex align-items-stretch mt-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="icon"><i class="bi bi-capsule-pill"></i></div>
+                  <h4><a href="">EXPIRY BREAKAGE</a></h4>
+<!--                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>-->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-left">
+          <h2>Suman Agencies</h2>
+          <p>We are in this industry from 1980,we have 25000SQ.FT area, cold storage 200sq.ft(bluestar), 2 official cabins and anual turnover is more than 100cr every year since we have started.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">cabins</li>
+              <li data-filter=".filter-card">storage</li>
+              <li data-filter=".filter-web">staff</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-info">
+              <img src="{% static 'assets/img/portfolio/imgg5.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>App 1</h4>-->
+<!--                <p>cabin</p>-->
+                <div class="portfolio-info">
+                  <a href="{% static 'assets/img/portfolio/imgg5.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class=""></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/ware.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>Web 3</h4>-->
+<!--                <p>cabin</p>-->
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/ware.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class=""></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/imgg6.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>App 2</h4>-->
+<!--                <p>cabins</p>-->
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/imgg6.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="cabin"><i class=""></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img22.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>Card 2</h4>-->
+                <p>storage</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/img22.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="storage"><i class=""></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/imgg.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>Web 2</h4>-->
+                <p>staff</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/imgg.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="staff"><i class=""></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/cold-room.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>App 3</h4>-->
+                <p>cold-storage</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/cold-room.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="storage"><i class="bx bx-plus"></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img3.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>Card 1</h4>-->
+                <p>storage</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/img3.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="storage"><i class="bx bx-plus"></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/im1.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>Card 3</h4>-->
+                <p>cabins</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/im1.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="staff"><i class="bx bx-plus"></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/img4.jpeg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+<!--                <h4>Web 3</h4>-->
+                <p>staff</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/portfolio/img4.jpeg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="staff"><i class="bx bx-plus"></i></a>
+<!--                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Testimonials</h2>
+              <p>For suman agencies customer commitment always stands before anything else. We believe that the road to success will be paved through continued customer satisfaction. For a business to flourish, sustainable relationships with the clients is must and that is what we focous on. its not just about making the customers happy, its about giving them 3600 degrees service and more than what they just ask for.
+            </div>
+          </div>
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Its always great to work with the suman agencies, they camn be trusted esily and I donot have to keep track of my work, they it for me on time, all time.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <img src="{% static 'assets/img/testimonials/feedback.jpg' %}"  class="testimonial-img" alt="">
+<!--                    <h3>Saul Goodman</h3>-->
+<!--                    <h4>Ceo &amp; Founder</h4>-->
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      They take care of my business like their own and never fail to give suggestions that would help my company grow in the industry try. Their quality customers service is surely what would lead them massive success.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <img src="{% static 'assets/img/testimonials/testi.jpg' %}" class="testimonial-img" alt="">
+<!--                    <h3>Sara Wilsson</h3>-->
+<!--                    <h4>Designer</h4>-->
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Suman Agencies has proven to be reputable service provider. Their vast experiance and priority based service and makes our relationship with long lasting.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <img src="{% static 'assets/img/testimonials/testimonil.jpg' %}" class="testimonial-img" alt="">
+<!--                    <h3>Jena Karlis</h3>-->
+<!--                    <h4>Store Owner</h4>-->
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                      Suman agency is efficient with their work. The delivaries are on time and the products never damaged.Its great to work with a company and feels like a family.
+                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </p>
+                    <img src="{% static 'assets/img/testimonials/tesi.png' %}" class="testimonial-img" alt="">
+<!--                    <h3>Matt Brandon</h3>-->
+<!--                    <h4>Freelancer</h4>-->
+                  </div>
+                </div><!-- End testimonial item -->
+
+<!--                <div class="swiper-slide">-->
+<!--                  <div class="testimonial-item">-->
+<!--                    <p>-->
+<!--                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>-->
+<!--                      Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.-->
+<!--                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>-->
+<!--                    </p>-->
+<!--                    <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">-->
+<!--                    <h3>John Larson</h3>-->
+<!--                    <h4>Entrepreneur</h4>-->
+<!--                  </div>-->
+<!--                </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+<!--     ======= Team Section =======-->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Infrastructure</h2>
+<!--              <p>office space 25000sq.ft, </p>-->
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+
+              <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="pic"><img src="{% static 'assets/img/team/warehouse.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Office space 25000 sq.ft</h4>
+<!--                    <span>Chief Executive Officer</span>-->
+                    <p>In our warehouse we make sure that our goods are protected adverse weather conditions and other risky environmental factors. we also store goods way they are easy to locate and the information about each product recorded safely and monitored time to time</p>
+                    <div class="social">
+<!--                      <a href=""><i class="ri-twitter-fill"></i></a>-->
+<!--                      <a href=""><i class="ri-facebook-fill"></i></a>-->
+<!--                      <a href=""><i class="ri-instagram-fill"></i></a>-->
+<!--                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic"><img src="{% static 'assets/img/team/employees.jpeg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>150+ Employees</h4>
+<!--                    <span>Product Manager</span>-->
+                    <p>Our workforce has been divided such that the respective person can pay full attention to duties, responsibilities and leave no room for error. All our employees pledge their full potential to help the agency to reach agency reach new heights</p>
+                    <div class="social">
+<!--                      <a href=""><i class="ri-twitter-fill"></i></a>-->
+<!--                      <a href=""><i class="ri-facebook-fill"></i></a>-->
+<!--                      <a href=""><i class="ri-instagram-fill"></i></a>-->
+<!--                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic"><img src="{% static 'assets/img/team/tranport.webp' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Transportation</h4>
+<!--                    <span>CTO</span>-->
+                    <p>Movement of goods is done under well monitored conditions such that the product suffers zero damage. Transporation of the goods from inbound area to the storage area is well taken care of</p>
+                    <div class="social">
+<!--                      <a href=""><i class="ri-twitter-fill"></i></a>-->
+<!--                      <a href=""><i class="ri-facebook-fill"></i></a>-->
+<!--                      <a href=""><i class="ri-instagram-fill"></i></a>-->
+<!--                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="pic"><img src="{% static 'assets/img/team/deliver.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Our speed</h4>
+<!--                    <span>Accountant</span>-->
+                    <p>Deadlines are our top most priority, we are cautions with the items on time to the clients. We ensure, the conveyance is done inside the 24 hours of time if it's local order ortherwise it takes day's time to deliver the items outstations </p>
+                    <div class="social">
+<!--                      <a href=""><i class="ri-twitter-fill"></i></a>-->
+<!--                      <a href=""><i class="ri-facebook-fill"></i></a>-->
+<!--                      <a href=""><i class="ri-instagram-fill"></i></a>-->
+<!--                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+<!--    our vendors-->
+    <section id="team" class="team">
+        <div class="container">
+
+    <div class="row">
+      <div class="section-title" data-aos="fade-right">
+        <h2 style="padding-left:1px">our vendors</h2>
+
+      </div>
+
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+            <h6><img src="{% static 'assets/img/clients/abbott.jpg' %}"  height="70" alt="image" /></h6>
+        </div>
+        <div class="item">
+            <h6><img src="{% static 'assets/img/clients/francinoind.png' %}"  height="70" /></h6>
+        </div>
+        <div class="item">
+            <h6><img src="{% static 'assets/img/clients/cachet.png' %}"  height="70"/></h6>
+        </div>
+
+        <div class="item">
+            <h6><img src="{% static 'assets/img/clients/british.jpg' %}"  height="70" alt="image" /></h6>
+        </div>
+
+        <div class="item">
+            <h6><img src="{% static 'assets/img/clients/drreddys.jpg' %}" height="100" alt="image" /></h6>
+        </div>
+        <div class="item">
+            <h6><img src="{% static 'assets/img/clients/lupin.jpg' %}" height="120" alt="image" /></h6>
+        </div>
+        <div class="item">
+            <h6><img src="{% static 'assets/img/clients/cipla.jpg' %}"  height="50" alt="image" /></h6>
+        </div>
+        <div class="item">
+            <h6><img src="{% static 'assets/img/clients/intaspharm.jpeg' %}" height="70" alt="image" /></h6>
+        </div>
+          <div class="item">
+            <h6><img src="{% static 'assets/img/clients/biochem.jfif' %}" height="100" alt="image" /></h6>
+          </div>
+
+
+      </div>
+    </div>
+        </div>
+    </section>
+
+    <!--Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS code after importing jquery and owl -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center" data-aos="zoom-in">
+<!--          <h3>please feel free to contact us</h3>-->
+          <p style="font-size:30px; font-family: sasans-serif, poppins"> please feel free to contact us</p>
+          <a class="cta-btn" href="{% url 'contactus' %}">Contact us</a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+<!--    <section id="contact" class="contact">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+<!--          <div class="col-lg-4" data-aos="fade-right">-->
+<!--            <div class="section-title">-->
+<!--              <h2>Contact us</h2>-->
+<!--              <p> if you have any query? please contact us</p>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">-->
+<!--            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15229.204869174013!2d78.5543858!3d17.3973263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb993d39950c0b%3A0x4d366ef3b1773f83!2sSuman%20Agencies%20HYD%20Private%20Limited!5e0!3m2!1sen!2sin!4v1678108879037!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>-->
+<!--            <div class="info mt-4">-->
+<!--              <i class="bi bi-geo-alt"></i>-->
+<!--              <h4>Location:</h4>-->
+<!--              <p>2-24, GROUND FLOOR, AND FIRST FLOOR, BLOCK-B <br>-->
+<!--              IDA UPPAL, UPPAL MANDAL, MEDCHAL-MALKAJGIRI(Dist.)<br>-->
+<!--              TELANGANA,INDIA</p>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-lg-6 mt-4">-->
+<!--                <div class="info">-->
+<!--                  <i class="bi bi-envelope"></i>-->
+<!--                  <h4>Email:</h4>-->
+<!--                  <p>sumanagencieshydpvtltd@gmail.com</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="col-lg-6">-->
+<!--                <div class="info w-100 mt-4">-->
+<!--                  <i class="bi bi-phone"></i>-->
+<!--                  <h4>Call:</h4>-->
+<!--                  <p>+91 7207533685</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <form action="{% url 'index' %}" method="post" role="form" class="php-email-form mt-4">-->
+<!--               {% csrf_token %}-->
+<!--              <div class="row">-->
+<!--                <div class="col-md-6 form-group">-->
+<!--                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>-->
+<!--                </div>-->
+<!--                <div class="col-md-6 form-group mt-3 mt-md-0">-->
+<!--                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="form-group mt-3">-->
+<!--                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>-->
+<!--              </div>-->
+<!--              <div class="form-group mt-3">-->
+<!--                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>-->
+<!--              </div>-->
+<!--&lt;!&ndash;              <div class="my-3">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="loading">Loading</div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="error-message"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="sent-message">Your message has been sent. Thank you!</div>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--              <div class="text-center"><button type="submit">Send Message</button></div>-->
+<!--              {% if message %}-->
+<!--              <div>-->
+<!--&lt;!&ndash;                <th>&ndash;&gt;-->
+<!--                         <div class="alert alert-danger" role="alert">-->
+<!--                            {{ message }}-->
+<!--                        </div>-->
+<!--&lt;!&ndash;                </th>&ndash;&gt;-->
+<!--              </div>-->
+<!--              {% endif %}-->
+<!--            </form>-->
+
+<!--&lt;!&ndash;    </table>&ndash;&gt;-->
+<!--&lt;!&ndash; </form>&ndash;&gt;-->
+<!--&lt;!&ndash;-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>-->
+<!--    -->
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h2>Suman Agencies</h2>
+            <p>
+              2-24, GROUND FLOOR, AND FIRST FLOOR, BLOCK-B <br>
+              IDA UPPAL, UPPAL MANDAL, MEDCHAL-MALKAJGIRI(Dist.)<br>
+              TELANGANA,INDIA<br><br>
+              <strong>Phone:</strong> +91 7207533685 | 8019656558<br>
+              <strong>Email:</strong>sumanagencieshydpvtltd@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Units</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Infrastructure</a></li>
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
+            </ul>
+          </div>
+
+<!--          <div class="col-lg-3 col-md-6 footer-links">-->
+<!--            <h4>Our Services</h4>-->
+<!--            <ul>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 footer-newsletter">-->
+<!--            <h4>Join Our Newsletter</h4>-->
+<!--            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>-->
+<!--            <form action="" method="post">-->
+<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
+<!--            </form>-->
+<!--          </div>-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Suman Agencies</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/ -->
+<!--          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+        </div>
+      </div>
+<!--      <div class="social-links text-center text-md-right pt-3 pt-md-0">-->
+<!--        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
+<!--        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>-->
+<!--        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>-->
+<!--        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
+<!--        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
+<!--      </div>-->
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
